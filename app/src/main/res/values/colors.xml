@@ -2,5 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="screen_bg">#3598D0</color>
+    <color name="screen_bg">#FFF8EE</color>
+    <color name="team_a_bg">#FFE0B2</color>
+    <color name="team_b_bg">#B2DFDB</color>
+    <color name="team_a_btn">#E65100</color>
+    <color name="team_b_btn">#00695C</color>
+    <color name="btn_minus">#546E7A</color>
+    <color name="btn_reset">#C62828</color>
+    <color name="btn_end">#283593</color>
 </resources>

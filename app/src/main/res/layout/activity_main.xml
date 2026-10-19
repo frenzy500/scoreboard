@@ -3,21 +3,178 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screen_bg"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/screen_bg">
-    <!-- את הרכיבים שלכם מוסיפים כאן, בין שתי התגיות -->
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="text"
+        android:gravity="center"
+        android:text="גמר הליגה"
         android:textSize="28sp" />
 
     <Button
         android:id="@+id/btnWhistle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
         android:text="שריקת פתיחה" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@color/team_a_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvNameA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הנשרים"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnA3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_a_btn"
+                android:text="+3" />
+
+            <Button
+                android:id="@+id/btnA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_a_btn"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/btnA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_a_btn"
+                android:text="+1" />
+
+            <Button
+                android:id="@+id/btnAMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btn_minus"
+                android:text="-1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/team_b_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvNameB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הכרישים"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_b_btn"
+                android:text="+3" />
+
+            <Button
+                android:id="@+id/btnB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_b_btn"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/btnB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/team_b_btn"
+                android:text="+1" />
+
+            <Button
+                android:id="@+id/btnBMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btn_minus"
+                android:text="-1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_reset"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="איפוס"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnEndGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/btn_end"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="סיום משחק"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
 </LinearLayout>
